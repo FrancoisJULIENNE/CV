@@ -1,0 +1,68 @@
+//  Theme Settings
+//  -----------------------------
+//
+//  Table of Contents:
+//
+//  1. Colors
+//  2. Global
+
+// 1. Colors
+// ---------
+$white: #ffffff;
+$black: #000000;
+
+$gris : #2F3031;
+$ardoise: #282e2f;
+$blanc: #F5F2EE;
+$orange: #d2a609;
+$bleu: #00224f;
+
+// $color-primary: #1779ba;
+// $color-secondary: #767676;
+// $color-success: #3adb76;
+// $color-warning: #ffae00;
+// $color-alert: #cc4b37;
+
+
+// 2. Global
+// ---------
+$body-background: $blanc;
+$body-font-color: $gris;
+
+@mixin desktop {
+    @media all and (min-width: 981px) {
+        @content;
+    }
+}
+
+@mixin desktopSmall {
+    @media all and (min-width: 981px) and (max-width: 1350px) {
+        @content;
+    }
+}
+
+
+
+@mixin tablet {
+    @media all and (max-width: 980px) {
+        @content;
+    }
+}
+
+@mixin tabletOnly {
+    @media all and (min-width: 768px) and (max-width: 980px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media all and (max-width: 599px) {
+        @content;
+    }
+}
+
+@mixin iPhoneFuck {
+    @media all and (max-width: 320px) {
+        @content;
+    }
+}

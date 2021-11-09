@@ -1,0 +1,60 @@
+{
+  "name": "divi-child-theme-gulp",
+  "version": "1.0.0",
+  "description": "A Divi child_theme using Gulp",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "postinstall": "npm run build",
+    "build": "gulp",
+    "scripts": "gulp scripts",
+    "styles": "gulp styles",
+    "images": "gulp images",
+    "watch": "gulp watch",
+    "browsersync": "gulp browsersync"
+  },
+  "author": "Raphael Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raphaelsanchez/divi-child-theme-gulp/issues"
+  },
+  "homepage": "https://github.com/raphaelsanchez/divi-child-theme-gulp#readme",
+  "dependencies": {
+    "vinyl-ftp": "^0.6.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.5.0",
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-filter": "^6.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-load-plugins": "^2.0.5",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.5",
+    "gulp-wp-pot": "^2.5.0",
+    "jshint": "^2.12.0",
+    "jshint-stylish": "^2.2.1"
+  },
+  "jshintConfig": {
+    "globals": {
+      "jQuery": true
+    }
+  },
+  "browserslist": [
+    "last 2 versions",
+    "ie >= 9",
+    "ios >= 7"
+  ]
+}
